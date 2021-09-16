@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>ရသစာတမ်းများ</title>
+</head>
+<style>
+    body{
+        max-width: 100%;
+        user-select: none;
+    }
+    
+    h3,.ch{
+        color: red;
+    }
+    
+    #darkmode{
+        position: absolute;
+        right: 1%;
+        top: 2%;
+    }
+    
+    .dark-mode{
+        background-color: #000;
+        color: #fff;
+    }
+    
+    #more {display: none;}
+    #myBtn{
+        border-radius:6px;
+    }
+    @media (max-width:30em) {
+        p{
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="form-check form-switch" id="darkmode">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheck" style="cursor: pointer;" onclick="changeMode()">
+            <label class="form-check-label" for="flexSwitchCheckChecked">Night</label>
+        </div>
+        <br><br>
+        <h3>ငှက်များမည်သို့ မိတ်ဆွေစဖြစ်ကြသလဲ</h3>
+        <span class="text-break">
+            ပထမမှာ ငှက်တွေကြားတွင်မိတ်ဆွေဖြစ်ခြင်းကိုမသိကြချေ။အကြောင်းမှာသူတို့အားလုံးကြားတွင် ပြင်းထန်သောပြိုင်ဆိုင်မှုရှိနေသည်။ငှက်တစ်ကောင်က အခြားငှက်တစ်ကောင်ကိုမြင်လျှင် သူကတစ်ချက်တည်းပြောလိုက်သည်၊'ငါဟာ မင်းထက်သာတဲ့ငှက်တစ်ကောင်ဖြစ်တယ်' ၊အခြားငှက်ကပြန်ပြောသည် 'မဟုတ်တာ သေချာတယ်၊ငါကမင်းထက်သာတဲ့ငှက်တစ်ကောင်ဖြစ်တယ်' ၊ထို့နောက်သူတို့ရန်ဖြစ်ရန် စတင်ကြလိမ့်မည်။တစ်နေ့မှာ ရစ်သည်ကျီးတစ်ကောင်ကိုတွေ့၍ရန်ဖြစ်ချင်သည့် စိတ်မရှိသည့်အလျောက်ပြော၏ 'ကျီး၊ ခင်ဗျားဟာ ကျွန်တော့်ထက်ပိုကောင်းတဲ့ ငှက်တစ်ကောင်ဖြစ်ပါတယ်။' ကျီးကအံ့အား သင့်ရုံမကရစ်၏စကားလုံးများကိုနှစ်သက်သဘောကျ၍ ယဉ်ကျေးမှု အရပြန်ပြောသည်။ 'မဟုတ်ဘူး ၊ မဟုတ်ဘူး၊ ရစ် ခင်ဗျားက ကျွန်တော့်ထက်ပိုပြီးကောင်းတဲ့ ငှက်တစ်ကောင်ဖြစ်ပါတယ်။' ငှက်နှစ်ကောင်သည် ထိုင်ပြီးလျှင် စကားစမြည် ပြောကြသည်။  'ကောင်းပြီ ရစ်' ကျီးက ပြန်ပြောသည်။ထို့ကြောင့်သူတို့နှစ်ယောက်သားသည် သစ်ပင်ကြီးတစ်ပင်တည်းတွင် အတူနေကြသည်။အချိန်ကြာမြင့်သော်<span id="dots">...</span><span id="more">သူတို့နှစ်ဦး၏ လေစားမှုသည် တိုးတက်လာသည်။သို့သော် သူတို့၏ကိစ္စမှာ အရောအဝင် အရိုသေတန်မဖြစ်ပေ။သူတို့သည် တစ်ဦးကိုတစ်ဦး လောကဝတ်ကျေပွန်မှုနှင့် လေးစားမှုတို့ကိုဆက်လက်ပြကြသည်။အခြားငှက်တို့က ရစ်နှင့်ကျီး ပေါင်းသင်မှုကို စိတ်ဝင်စားခြင်းနှင့်စောင့်ကြည့်ကြသည်။သူတို့သည် ငှက်နှစ်ကောင် ရန်ဖြစ်ခြင်း၊ စကားများခြင်းမရှိဘဲ ဤမျှ ကာလရှည်ကြာစွာ အတူနေကြသည်ကို အံ့အားသင့်ကြသည်။ နောက်ဆုံး၌ အချို့သောငှက်တို့က သူတို့၏မိတ်ဆွေဖြစ်ခြင်းကို ဆန်းစစ်ကြည့်ရန် ဆုံးဖြတ်ကြသည်။ထို့ကြောင့်သူတို့သည် ကျီးအဝေးရောက်ခိုက် ရစ်ထံသို့ သွား၍ 'ရစ်၊ ခင်ဗျား ဘာကြောင့် ဘာမျှမရှိတဲ့ ကျီးနဲ့ အတူ နေတာလဲ'၊ 'ခင်ဗျားတို့ ဒီလို မဆိုရဘူး' ဟု ရစ်ကပြန်ပြောသည်။'ကျီးဟာ ကျွန်တော့်ထက်ပိုကောင်းတဲ့ ငှက်တစ်ကောင်ဖြစ်တယ်။သူ ကျွန်တော်နှင့်အတူ သစ်ပင်ထဲမှာ နေခြင်းဖြင့် ကျွန်တော့်ကို ဂုဏ်ပြုပါတယ်'။နောက်တစ်နေ့တွင် သူတို့သည် ရစ် အဝေးရောက်ခိုက် ကျီးထံသို့ သွား၍ 'ကျီး ခင်ဗျား ဘာကြောင့် ဘာမျှအသုံး မကျတဲ့ ရစ်နှင့်အတူ နေတာလဲ' ဟုပြောကြားသည်။ 'ခင်ဗျားတို့ ဒီလိုမဆိုရဘူး' ကျီးကပြန်ပြောသည်။'ရစ် ဟာ ကျွန်တော့်ထက်ပိုကောင်းတဲ့ ငှက်တစ်ကောင်ဖြစ်တယ်။သူ ကျွန်တော်နှင့်အတူ သစ်ပင်ထဲမှာ နေခြင်းဖြင့် ကျွန်တော့်ကို ဂုဏ်ပြုပါတယ်'။ ငှက်တို့သည် ရစ်နှင့်ကျီး တို့ တစ်ဦးပေါ် တစ်ဦး သဘောထားကို လေးလေးနက်နက် စွဲမှတ်သွားကြသည်။(ထို့သို့ သဘောပေါက်သောကြောင့်)သူတို့က သူတို့ကိုယ်သူတို့ ပြောကြသည်။'ငါတို့လည်း ရစ်နှင့်ကျီး လို ရန်မဖြစ်ဘဲ ၊ စကားမများကြဘဲ ဘာဖြစ်လို့ မနေနိုင်ကြရမှာလဲ'။ဟု ဆိုကြသည်။ထိုနေ့စ၍ ရှေ့တစ်လျောက်လုံး တစ်ဦးပေါ် တစ်ဦး မိတ်ဆွေဖြစ်ခြင်းနှင့် လေးစားမှုတို့သည် ငှက်များကြားတွင် တိုးတက်လာလေသည်။</span>
+            <button onclick="myFunction()" style="color: blue;" id="myBtn">More</button>
+        </p><hr>
+    </div>    
+    <script>
+        let ele = document.body;
+        function changeMode(params) {
+            ele.classList.toggle('dark-mode');                    
+        };
+        
+        const btnText = document.querySelector('button');
+        const seeMore = document.querySelector('#more');
+        const dots = document.querySelector('#dots');
+        function myFunction(params) {
+            if (dots.style.display === 'none') {
+                dots.style.display = 'inline';
+                btnText.innerHTML = 'More';
+                seeMore.style.display = 'none';
+            }else{
+                dots.style.display = 'none';
+                btnText.innerHTML = 'Less';
+                seeMore.style.display = 'inline';
+            }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+h1,.ch,h3{
+    color: rgb(255, 0, 0);
+}
+
+.thanks{
+    max-width: 100%;
+    height: inherit;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+}

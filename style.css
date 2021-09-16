@@ -1,0 +1,95 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+body{
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-family: monospace, Arial, sans-serif,;
+}
+
+.d-block{
+    height: 550px;
+}
+
+footer{
+    background-color: rgb(2, 2, 2);
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+    line-height: 2.5em;
+}
+
+#smallscreen{
+    display: none;
+}
+
+h5{
+    color: rgb(47, 0, 255);
+    font-weight: bold;
+}
+
+html{
+    background-color: #e3e3e3;
+}
+
+.cards{
+    display: none;
+}
+
+span{
+    color: red;
+}
+
+.dropdown-item:hover{
+    color: rgb(62, 59, 255);
+}
+
+@media only screen and (max-width:500px) {
+    .d-block{
+        height: 300px;
+    }
+    
+    .main-page{
+        display: none;
+    }
+    
+    #smallscreen{
+        display: inline-block;
+    }
+    
+    .textandimg{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .main-body{
+        padding: 5px;
+        margin: 0 0 0 5px;
+        text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    }
+    
+    .cards{
+        display: block;
+    }
+
+    marquee{
+        display: none;
+    }
+
+    .navbar-brand{
+        font-size: 0.7em;
+    }
+
+    .arrow{
+        display: none;
+    }    
+}
