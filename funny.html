@@ -15,6 +15,8 @@
             <input class="form-check-input" type="checkbox" id="flexSwitchCheck" style="cursor: pointer;" onclick="changeMode()">
             <label class="form-check-label" for="flexSwitchCheckChecked">Night</label>
         </div><br>
+        <span onclick="history.back()" id="his-back">Back</span>
+        <button class="topButton" onclick="topFunction()">&#8896;</button>
         <h3>အငှားချမိမယ်</h3>
         <p>လယ်သမားတစ်ဦး မြေကွက်တစ်ကွက်ကို အငှားယူကာ ဂျုံစိုက်သည်။နံနက်ခင်းမှ ညနေပိုင်းအထိ လယ်ကွင်းတွင်သာအချိန်ကုန်သည်။ဇနီးဖြစ်သူကိုလုံးဝ မေ့သွားသည်။
             တစ်ညတွင်အိပ်ရာမှ လန့်နိုးသည်။ သူ၏လက်တစ်ဖက်သည် ဇနီးသည်၏ အနူးညံ့ဆုံးသောနေရာကို သွားထိသည်။ဇနီးသည်ကပြောသည်-'ကွင်းထဲမှာချည်း ထွန်မနေနဲ့၊
@@ -31,6 +33,24 @@
                 ကြားဖူးနားဝဆိုသလို သိထားသည်။ထို့ကြောင့်ရည်းစားစာဖြင့်ပိုးရန်အကြံဖြစ်လေသည်။ထို့ကြေင့်သူသိသမျှ ကိုချရေးလိုက်သည်မှာ-'ကိုယ့်ကိုချစ်ရင်ချစ်ပါ ကိုယ့်ကိုမချစ်ရင် 
                 ရွာကိုမီးရှို့ပစ်မယ်။'ဟု ဖြစ်သည်။</p>
         </div>
+        <script src="darkmode.js"></script>
+        <script>
+            const topButtonTag = document.querySelector('.topButton');
+      window.onscroll = function() {
+        scrollFunction();
+      }
+      function scrollFunction() {
+        if (document.body.scrollTop>20 || document.documentElement.scrollTop>20) {
+          topButtonTag.style.display = 'block';
+        }else{
+          topButtonTag.style.display = 'none';
+        }
+      }
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+          </script>
     </body>
-    <script src="darkmode.js"></script>
     </html>

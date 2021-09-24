@@ -40,7 +40,7 @@ html{
     background-color: #e3e3e3;
 }
 
-.cards{
+.cards,.topButton{
     display: none;
 }
 
@@ -77,7 +77,7 @@ span{
         text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     }
     
-    .cards{
+    .cards,.topButton{
         display: block;
     }
 
@@ -91,5 +91,5 @@ span{
 
     .arrow{
         display: none;
-    }    
+    } 
 }

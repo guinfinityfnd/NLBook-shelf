@@ -11,16 +11,16 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <img src="book.png" alt="knowledge-book" width="30" height="24" class="m-2">
+      <img src="Logo.png" alt="knowledge-book" width="30" height="24" class="m-2">
       <a class="navbar-brand" href="#">NLBook-Shelf</a>
       
       <ul class="nav ms-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Authors</a>
+          <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categories</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="./Rhatha.html">ရသစာတမ်းများ</a></li>
-            <!-- <li><a class="dropdown-item disabled" href="#">Chit Oo Nyo</a></li>
-              <li><a class="dropdown-item disabled" href="#">Nay Win Myint</a></li> -->
+            <li><a class="dropdown-item" href="fiction.html">ဝတ္ထုများ</a></li>
+              <!-- <li><a class="dropdown-item disabled" href="#">Nay Win Myint</a></li> -->
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="funny.html">ဟာသများ</a></li>
               <li><a class="dropdown-item" href="story.html">ပုံပြင်များ</a></li>
@@ -135,8 +135,6 @@
         </div>
         <div style="border-bottom: 2px dotted red; padding-top:2px;"></div>
         <br>
-        <!--third paragraph ends-->
-        <!--footer starts-->
       </div>
       <div class="container-fluid">
         <footer>
@@ -144,15 +142,22 @@
         </footer>
       </div>
     </div>
-    
-    
-    
-    
-    
-    
-    
-    
+    <script>
+      const setItem = ()=>{
+        const localStr = localStorage.setItem('accepted','1');
+        alert(`Welcome To NLBook-shelf`);
+        if (alert) {
+          localStr;
+        }
+      };
+      
+      window.addEventListener('load',()=>{
+        const getItem = localStorage.getItem('accepted');
+        if (getItem !== '1') {
+          setItem();
+        };
+      });
+    </script>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <!-- <script src="autotypewriter.js"></script> -->
   </body>
   </html>
