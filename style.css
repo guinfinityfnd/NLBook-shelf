@@ -10,11 +10,17 @@ body{
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    font-family: monospace, Arial, sans-serif,;
+    font-family: monospace, Arial, sans-serif,'zaw gyi';
 }
 
 .d-block{
     height: 550px;
+}
+
+.text-break{
+    text-align: justify; /* For Edge */
+  -moz-text-align-last: justify; /* For Firefox prior 58.0 */
+  text-align-last: justify;
 }
 
 footer{

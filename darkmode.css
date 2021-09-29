@@ -3,6 +3,24 @@
     color: #fff;
 }
 
+body{
+    max-width: 100%;
+    user-select: none;
+}
+
+#more {display: none;}
+
+.myBtn{
+    border-radius:6px;
+    color: red;
+}
+
+.text-break{
+    text-align: justify; /* For Edge */
+    -moz-text-align-last: auto; /* For Firefox prior 58.0 */
+  text-align-last:auto;
+}
+
 #darkmode{
     position: absolute;
     right: 1%;
@@ -32,3 +50,9 @@
     padding: 9px;
     opacity: .6;
 }
+
+@media (max-width:30em) {
+    p{
+        width: 100%;
+    }
+};
