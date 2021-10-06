@@ -1,26 +1,13 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 body{
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    font-family: monospace, Arial, sans-serif,'zaw gyi';
+    font-family: monospace, Arial, sans-serif,'zaw gyi','unicode','pyidaungsu';
 }
 
 .d-block{
     height: 550px;
-}
-
-.text-break{
-    text-align: justify; /* For Edge */
-  -moz-text-align-last: justify; /* For Firefox prior 58.0 */
-  text-align-last: justify;
 }
 
 footer{
@@ -58,11 +45,29 @@ span{
     color: rgb(62, 59, 255);
 }
 
+.updatedItem::after{
+    content: '1';
+    font-size: 1em;
+    background-color: rgb(12, 12, 12);
+    color: #fff;
+    border-radius: 50px;
+    padding: 5px;    
+}
+
 @media only screen and (max-width:500px) {
     .d-block{
         height: 300px;
     }
-    
+
+    .online{
+        background-color: green;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        margin: 0px 2px;
+    }
+
     .main-page{
         display: none;
     }
@@ -98,4 +103,15 @@ span{
     .arrow{
         display: none;
     } 
+    footer p{
+        text-align: center;
+        color: #fff;
+        font-size: 0.75em;
+    }
+
+    .text-break{
+        text-align: justify; /* For Edge */
+      -moz-text-align-last: justify; /* For Firefox prior 58.0 */
+      text-align-last: justify;
+    }
 }
